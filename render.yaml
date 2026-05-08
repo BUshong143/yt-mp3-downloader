@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: yt-mp3-downloader
+    runtime: node
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: NODE_VERSION
+        value: 18.0.0
